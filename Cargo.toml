@@ -1,0 +1,7 @@
+[package]
+name = "slapfight"
+version = "0.1.0"
+authors = ["computermouth <computermouth@crunchbangplusplus.org>"]
+
+[dependencies]
+sdl2 = "0.16.0"
