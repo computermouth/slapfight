@@ -26,17 +26,18 @@ pub fn main() {
 		.unwrap();
     
     let mut state = GameState::Logo;
+    let mut logo_timer : u32 = 0;
     
 	'running: loop {
 		
 		renderer.set_draw_color(Color::RGBA(30, 30, 39, 255));
 		renderer.clear();
-		
 		let mut event_pump = sdl_context.event_pump().unwrap();
-		
-		let mut some: u8 = 12;
+
+		//let logotuple = (renderer, event_pump, state, logo_timer);
 		
 		match state {
+			//GameState::Logo		=> logotuple = logo::logo_scene(logotuple),
 			GameState::Logo		=> renderer = logo::logo_scene(renderer),
 			GameState::Intro	=> println!("intro"),
 			GameState::Play		=> println!("play"),
@@ -44,8 +45,6 @@ pub fn main() {
 		}
 		
 		renderer.present();
-
-		
 
         for event in event_pump.poll_iter() {
             match event {

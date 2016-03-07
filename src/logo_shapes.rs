@@ -1,16 +1,39 @@
 
 use modrect;
 
-pub static NTC_SLICE : [&'static modrect::MyRect; 41] = [ &NTC_001, &NTC_002, &NTC_003, &NTC_004, &NTC_005,
-	&NTC_006, &NTC_007, &NTC_008, &NTC_009, &NTC_010, &NTC_011, &NTC_012,
-	&NTC_013, &NTC_014, &NTC_015, &NTC_016, &NTC_017, &NTC_018, &NTC_019,
-	&NTC_020, &NTC_021, &NTC_022, &NTC_023, &NTC_024, &NTC_025, &NTC_026,
-	&NTC_027, &NTC_028, &NTC_029, &NTC_030, &NTC_031, &NTC_032, &NTC_033,
-	&NTC_034, &NTC_035, &NTC_036, &NTC_037, &NTC_038, &NTC_039 , &NTC_040 , &NTC_041 ];
+//~ pub static NTC_SLICE : [modrect::MyRect; 41] = [ &NTC_001, &NTC_002, &NTC_003, &NTC_004, &NTC_005,
+	//~ &NTC_006, &NTC_007, &NTC_008, &NTC_009, &NTC_010, &NTC_011, &NTC_012,
+	//~ &NTC_013, &NTC_014, &NTC_015, &NTC_016, &NTC_017, &NTC_018, &NTC_019,
+	//~ &NTC_020, &NTC_021, &NTC_022, &NTC_023, &NTC_024, &NTC_025, &NTC_026,
+	//~ &NTC_027, &NTC_028, &NTC_029, &NTC_030, &NTC_031, &NTC_032, &NTC_033,
+	//~ &NTC_034, &NTC_035, &NTC_036, &NTC_037, &NTC_038, &NTC_039 , &NTC_040 , &NTC_041 ];
+
+pub const NTC_ARRAY : [modrect::MyRect; 2] = [
+
+	modrect::MyRect {	
+	x: 253, 
+	y: 112, 
+	w: 20, 
+	h: 4, 
+	r: modrect::PINKR, 
+	g: modrect::PINKG, 
+	b: modrect::PINKB, 
+	a: 255 },
+	
+	modrect::MyRect {	
+	x: 261, 
+	y: 116, 
+	w: 8, 
+	h: 4, 
+	r: modrect::PINKR, 
+	g: modrect::PINKG, 
+	b: modrect::PINKB, 
+	a: 255 }
+];
 
 
 //NEXT
-pub static NTC_001 : modrect::MyRect = modrect::MyRect { 
+pub const NTC_001 : modrect::MyRect = modrect::MyRect { 
 	x: 253, 
 	y: 112, 
 	w: 20, 
