@@ -21,7 +21,7 @@ pub fn logo_scene( mut grenderer: render::Renderer ) -> render::Renderer {
 	grenderer = modrect::draw(grenderer, shapes::RED);
 	grenderer = modrect::draw(grenderer, shapes::GREEN);
 	grenderer = modrect::draw(grenderer, shapes::PURP);
-	grenderer = modrect::draw(grenderer, logo_shapes::NTC_001);
+	grenderer = modrect::draw(grenderer, logo_shapes::NTC_002);
 	
 	//~ let returntuple = (grenderer, event_pump, state, logo_timer);
 	//~ returntuple

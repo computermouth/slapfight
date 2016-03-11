@@ -3,6 +3,10 @@ use sdl2::rect::Rect;
 use sdl2::pixels::Color;
 use sdl2::render;
 
+//~ pub struct AggRect<'a> {
+	//~ pub arr: Vec<&'a MyRect>
+//~ }
+
 pub struct MyRect {
 	pub x: i32,
 	pub y: i32,

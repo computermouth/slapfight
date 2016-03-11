@@ -8,6 +8,12 @@ use modrect;
 	//~ &NTC_027, &NTC_028, &NTC_029, &NTC_030, &NTC_031, &NTC_032, &NTC_033,
 	//~ &NTC_034, &NTC_035, &NTC_036, &NTC_037, &NTC_038, &NTC_039 , &NTC_040 , &NTC_041 ];
 
+//~ pub const NTC_001 : modrect::MyRect = modrect::MyRect { 
+//~ 
+//~ pub const NTC_VEC : modrect::AggRect<'a> = modrect::AggRect {
+	//~ arr: vec![ &NTC_001, &NTC_002 ],
+//~ };
+
 pub const NTC_ARRAY : [modrect::MyRect; 2] = [
 
 	modrect::MyRect {	
