@@ -1,12 +1,8 @@
 
 use sdl2::rect::Rect;
 use sdl2::pixels::Color;
-use sdl2::render;
 
-//~ pub struct AggRect<'a> {
-	//~ pub arr: Vec<&'a MyRect>
-//~ }
-
+#[derive(Debug)]
 pub struct MyRect {
 	pub x: i32,
 	pub y: i32,
@@ -25,16 +21,11 @@ impl MyRect {
 	pub fn colorout(&self) -> Color {
 		Color::RGBA(self.r, self.g, self.b, self.a)
 	}
+	pub fn new( 
+		x: i32, y: i32, w: u32, h: u32, 
+		r: u8, g: u8, b: u8, a: u8)
+		-> MyRect {
+		
+		MyRect {x: x, y: y, w: w, h: h, r: r, g: g, b: b, a: a}
+	}
 }
-
-
-pub fn draw(mut grenderer: render::Renderer, mr: MyRect) -> render::Renderer {
-	grenderer.set_draw_color(mr.colorout());
-	grenderer.fill_rect(mr.rectout()).unwrap();
-	
-	grenderer
-}
-
-pub const PINKR : u8 = 255;
-pub const PINKG : u8 = 139;
-pub const PINKB : u8 = 255; 
