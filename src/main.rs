@@ -9,6 +9,10 @@ mod three_squares_00;
 mod three_squares_01;
 mod three_squares_02;
 mod three_squares_a00;
+mod high_squares_00;
+mod high_squares_01;
+mod high_squares_02;
+mod high_squares_a00;
 
 fn main() {
 
@@ -33,8 +37,10 @@ fn main() {
 		let mut event_pump = sdl_context.event_pump().unwrap();
 		
 		let ts : three_squares_a00::Anim = three_squares_a00::Anim::new();
+		let hs : high_squares_a00::Anim = high_squares_a00::Anim::new();
 		//~ renderer = ts.red(renderer);
 		renderer = three_squares_a00::draw(state, ts, renderer);
+		renderer = high_squares_a00::draw(state, hs, renderer);
 		
 		renderer.present();
 	
