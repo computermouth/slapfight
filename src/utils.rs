@@ -1,7 +1,7 @@
 
 use sdl2::render;
 
-use rectangle;
+use anim::shape::rect::rectangle;
 
 pub fn draw(mr : rectangle::MyRect, mut grenderer: render::Renderer) 
 	-> render::Renderer {
