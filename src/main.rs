@@ -21,7 +21,7 @@ fn main() {
 		.build()
 		.unwrap();
 	
-	let mut state: u8 = 0;
+	let mut state: u16 = 0;
 	
 	'running: loop {
 		
@@ -46,7 +46,7 @@ fn main() {
             }
         }
         
-        if state == 89 {
+        if state == 269 {
 			state = 0;
 		}else{
 			state += 1;
