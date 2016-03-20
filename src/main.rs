@@ -4,6 +4,7 @@ use sdl2::pixels::Color;
 use sdl2::event::Event;
 
 mod utils;
+mod rectangle;
 mod anim;
 use anim::{high_squares_a00, three_squares_a00};
 

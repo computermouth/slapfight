@@ -1,5 +1,5 @@
 
-pub mod rect;
+//~ pub mod rect;
 
 pub mod high_squares_00;
 pub mod high_squares_01;
