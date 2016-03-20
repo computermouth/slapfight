@@ -1,9 +1,7 @@
 
 use sdl2::render;
 
-use anim::shape::high_squares_00;
-use anim::shape::high_squares_01;
-use anim::shape::high_squares_02;
+use anim::shape::high_squares::{high_squares_00, high_squares_01, high_squares_02};
 
 pub struct Anim {
 	f_00: high_squares_00::Frame,
