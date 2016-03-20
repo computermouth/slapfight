@@ -1,7 +1,7 @@
 
 use sdl2::render;
 
-use rectangle;
+use anim::shape::rect::rectangle;
 use utils;
 
 

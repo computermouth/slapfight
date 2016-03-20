@@ -1,9 +1,9 @@
 
 use sdl2::render;
 
-use three_squares_00;
-use three_squares_01;
-use three_squares_02;
+use anim::shape::three_squares_00;
+use anim::shape::three_squares_01;
+use anim::shape::three_squares_02;
 
 
 pub struct Anim {
